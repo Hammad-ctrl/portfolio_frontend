@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chat -- Hazim Bhat</title>
+</head>
+<body>
+    <main class="flex w-full h-full">
+        <header class="navigation-bar  bottom-0 z-10  fixed w-full flex md:w-[33%] lg:w-1/4 md:sticky md:top-0 bg-white shadow-md md:h-screen justify-between p-3 md:p-10 flex-col">
+            <h1 class="playwrite text-2xl hidden md:block animated-gradient-text font-bold">Hazim Bhat</h1>
+            <nav class="navs relative">
+              <ul class="navbar flex items-center justify-center md:flex-col md:gap-5 poppins-medium">
+                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex  md:text-sm text-xs">General Info</span><span><i class="fa-solid fa-house-chimney text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex  md:text-sm text-xs">Projects Info</span><span><i class="fa-solid fa-code text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex md:text-sm text-xs">notfications</span><span><i class="fa-regular fa-heart text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden text-xs sm:flex  md:text-sm">Skills Info</span><span><i class="fa-brands fa-readme text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 hover:text-white hover:bg-black  text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer md:bg-black md:text-white ease-in duration-200 md:hover:bg-gray-800 flex-col-reverse md:flex-row"><span class="md:text-sm text-xs hidden sm:flex  ">Contact Info</span><span><i class="fa-solid fa-phone-volume text-2xl md:text-xl"></i></span></a>
+              </ul>
+            </nav>
+            <div class="profile hidden poppins-medium md:flex items-center cursor-pointer justify-center text-xl gap-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-3 px-6 rounded-lg shadow-lg transition-all duration-300 hover:from-pink-500 hover:to-yellow-500 hover:scale-105">
+              <div class="profile-photo border-2 border-white p-2 rounded-full w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+                <i class="fa-regular fa-user text-white text-lg"></i>
+              </div>
+              <div class="profile-name">
+                <p class="text-white font-semibold">Bhat Hazim</p>
+              </div>
+            </div>
+          </header>
+          <div class="chat-content-main w-full p-4 poppins-medium">
+            <div class="chat-bot-top-info w-full flex items-center justify-between bg-gray-300 rounded-md px-8 py-2">
+                <div class="name-n-image-chatbot flex items-center gap-4 ">
+                    <img src="/src/assets/utils/robot.png" width="50" alt="">
+                    <h2>Chat.ai</h2>
+                </div>
+                <div class="three-dots mx-3">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>
+            </div>
+            <div class="chat-container w-full" >
+
+            </div>
+            <div class="send-message fixed md:bottom-3 bottom-24 w-[95%]  md:w-2/3 pr-3 md:pr-0">
+            <div class="intput-container w-full relative">
+              <input type="text" name="message" id="message" class="w-full py-4 px-3 border-2 outline-none rounded-md overflow-hidden"  placeholder="Enter the message to send">
+              <button type="submit" class="bg-black text-white absolute top-0 right-0 h-full w-16 sm:w-24 md:w-32 flex items-center gap-3 justify-center rounded-r-md"><span class="hidden sm:flex">Send </span><span><i class="fa-solid fa-paper-plane"></i></span></button>
+            </div>
+            </div>
+          </div>
+    </main>
+</body>
+<script src="/src/js/chat.js"></script>
+</html>

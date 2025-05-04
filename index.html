@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Hazim Bhat</title>
+</head>
+
+<body>
+  <main class="flex w-full  h-full">
+    <!-- navbar starts here  -->
+    <header class="navigation-bar  bottom-0 z-10  fixed w-full flex md:w-[33%] lg:w-1/4 md:sticky md:top-0 bg-white shadow-md md:h-screen justify-between p-3 md:p-10 flex-col">
+      <h1 class="playwrite text-2xl hidden md:block animated-gradient-text font-bold">Hazim Bhat</h1>
+      <nav class="navs relative">
+        <button id="chat-btn" class="absolute bg-black flex lg:hidden items-center justify-center text-white rounded-full w-12 h-12 z-50 right-2 md:bottom-[-4rem] md:right-0 bottom-24">
+          <span><i class="fa-brands fa-rocketchat text-xl block"></i></span>
+        </button>
+        <ul class="navbar flex items-center justify-center md:flex-col md:gap-5 poppins-medium">
+          <a href="/" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="text-sm">Home</span><span><i class="fa-solid fa-house-chimney text-2xl md:text-xl"></i></span></a>
+          <li class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="text-sm">Projects</span><span><i class="fa-solid fa-code text-2xl md:text-xl"></i></span></li>
+          <li class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="text-sm">Blink</span><span><i class="fa-regular fa-heart text-2xl md:text-xl"></i></span></li>
+          <li class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="text-sm">Skills</span><span><i class="fa-brands fa-readme text-2xl md:text-xl"></i></span></li>
+          <li class="flex items-center gap-2 md:gap-10 hover:text-white hover:bg-black  text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer md:bg-black md:text-white ease-in duration-200 md:hover:bg-gray-800 flex-col-reverse md:flex-row"><span class="text-sm">Contact</span><span><i class="fa-solid fa-phone-volume text-2xl md:text-xl"></i></span></li>
+        </ul>
+      </nav>
+      <div class="profile hidden poppins-medium md:flex items-center cursor-pointer justify-center text-xl gap-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-3 px-6 rounded-lg shadow-lg transition-all duration-300 hover:from-pink-500 hover:to-yellow-500 hover:scale-105">
+        <div class="profile-photo border-2 border-white p-2 rounded-full w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+          <i class="fa-regular fa-user text-white text-lg"></i>
+        </div>
+        <div class="profile-name">
+          <p class="text-white font-semibold">Bhat Hazim</p>
+        </div>
+      </div>
+    </header>
+    <div id="center-section" class="section-center w-full md:w-[67%] lg:w-1/2 overflow-hidden bg-gray-50">
+      <div class="top-stories p-4 flex items-center gap-5 overflow-x-auto shadow-sm  no-scrollbar ">
+        
+        <div class="single-story cursor-pointer flex flex-col items-center group transition-all duration-200 hover:brightness-105 hover:drop-shadow-md">
+          <div class="relative w-20 h-20">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-[3px] shadow-sm">
+              <div class="bg-white rounded-full w-full h-full flex items-center justify-center p-[2px]">
+                <div class="w-full h-full rounded-full overflow-hidden">
+                  <img src="./src/assets/ai.jpg"
+                       alt="New Project"
+                       class="w-full h-full object-cover rounded-full transition-all duration-200" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title mt-2 text-center w-20">
+            <span class="block text-[12px] font-medium text-gray-800 truncate">E-com project</span>
+          </div>
+        </div>
+        <div class="single-story cursor-pointer flex flex-col items-center group transition-all duration-200 hover:brightness-105 hover:drop-shadow-md">
+          <div class="relative w-20 h-20">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-[3px] shadow-sm">
+              <div class="bg-white rounded-full w-full h-full flex items-center justify-center p-[2px]">
+                <div class="w-full h-full rounded-full overflow-hidden">
+                  <img src="./src/assets/project1/Screenshot 2024-11-03 182904.png"
+                       alt="New Project"
+                       class="w-full h-full object-cover rounded-full transition-all duration-200" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title mt-2 text-center w-20">
+            <span class="block text-[12px] font-medium text-gray-800 truncate">Social Media Project</span>
+          </div>
+        </div>
+        <div class="single-story cursor-pointer flex flex-col items-center group transition-all duration-200 hover:brightness-105 hover:drop-shadow-md">
+          <div class="relative w-20 h-20">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-[3px] shadow-sm">
+              <div class="bg-white rounded-full w-full h-full flex items-center justify-center p-[2px]">
+                <div class="w-full h-full rounded-full overflow-hidden">
+                  <img src="./src/assets/project1/Screenshot 2024-11-03 182927.png"
+                       alt="New Project"
+                       class="w-full h-full object-cover rounded-full transition-all duration-200" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title mt-2 text-center w-20">
+            <span class="block text-[12px] font-medium text-gray-800 truncate">Frontend development Project</span>
+          </div>
+        </div>
+        <div class="single-story cursor-pointer flex flex-col items-center group transition-all duration-200 hover:brightness-105 hover:drop-shadow-md">
+          <div class="relative w-20 h-20">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-[3px] shadow-sm">
+              <div class="bg-white rounded-full w-full h-full flex items-center justify-center p-[2px]">
+                <div class="w-full h-full rounded-full overflow-hidden">
+                  <img src="./src/assets/project1/Screenshot 2024-11-03 183022.png"
+                       alt="New Project"
+                       class="w-full h-full object-cover rounded-full transition-all duration-200" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title mt-2 text-center w-20">
+            <span class="block text-[12px] font-medium text-gray-800 truncate">Child Book Store</span>
+          </div>
+        </div>
+        <div class="single-story cursor-pointer flex flex-col items-center group transition-all duration-200 hover:brightness-105 hover:drop-shadow-md">
+          <div class="relative w-20 h-20">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 p-[3px] shadow-sm">
+              <div class="bg-white rounded-full w-full h-full flex items-center justify-center p-[2px]">
+                <div class="w-full h-full rounded-full overflow-hidden">
+                  <img src="./src/assets/project2/Screenshot 2024-12-23 231735.png"
+                       alt="New Project"
+                       class="w-full h-full object-cover rounded-full transition-all duration-200" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="title mt-2 text-center w-20">
+            <span class="block text-[12px] font-medium text-gray-800 truncate">Employee Protal</span>
+          </div>
+        </div>
+      </div>
+      <div class="projects-done md:p-4 flex flex-col gap-4 pb-24">
+        <div class="one-project flex flex-col gap-6 shadow-sm p-2">
+          <div class="one-project-top flex items-center justify-between">
+            <div class="one-project-top-left flex items-center gap-3">
+              <div class="one-project-top-left-img rounded-full overflow-hidden w-10 h-10">
+                <img src="./src/assets/h.jpg" width="50" alt="">
+              </div>
+              <div class="one-project-top-left-info flex flex-col justify-center text-xs poppins-medium">
+                <h4 class="text-lg">An ecommerce Site</h4>
+                <p>done using react js</p>
+              </div>
+            </div>
+            <div class="one-project-top-right text-2xl">
+              <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="project-images">
+            <div class="carousel-track" id="carouselTrack">
+              <img class="carousel-image" src="./src/assets/project1/Screenshot 2024-11-03 182904.png" alt="Project image 1" />
+              <img class="carousel-image" src="./src/assets/project1/Screenshot 2024-11-03 182927.png" alt="Project image 2" />
+              <img class="carousel-image" src="./src/assets/project1/Screenshot 2024-11-03 182956.png" alt="Project image 3" />
+              <img class="carousel-image" src="./src/assets/project1/Screenshot 2024-11-03 183022.png" alt="Project image 3" />
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+          <div class="bottom-info poppins-medium flex items-center justify-between">
+            <div class="bottom-info-left text-lg flex items-center gap-5">
+              <div class="like cursor-pointer flex items-center gap-2 ">
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+                <p class="hidden sm:flex"><span>3</span>Likes</p>
+              </div>
+              <div class="comment flex items-center gap-2">
+                <i class="fa-solid fa-comment cursor-pointer"></i>
+                <p class="hidden sm:flex"><span> 1 </span> Comment</p>
+              </div>
+            </div>
+            <div class="bottom-info-right text-lg flex items-center gap-2">
+              <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+              <p class="hidden sm:flex">Share Project</p>
+            </div>
+          </div>
+          <div class="project-review-from-client flex items-center justify-between">
+            <div class="project-review-from-client-left flex items-center">
+              <div class="image rounded-full flex items-center  overflow-hidden">
+                <img src="./src/assets/project1/profile_logo_.webp" class="rounded-full" width="70" alt="">
+              </div>
+              <div class="review-info poppins-medium flex flex-col gap-1">
+                <h5 class="flex items-center gap-1 "><span class="font-semibold">Hùng A</span> <span><img src="./src/assets/utils/verified.png" width="20" alt=""></span></h5>
+                <p class="text-sm review-text">He was hard working for my project to finish. Thanks</p>
+                <p class="text-xs font-semibold  animated-gradient-text-1">6 months ago</p>
+              </div>
+            </div>
+            <div class="project-review-from-client-right poppins-medium cursor-pointer ">
+              <a href="https://www.freelancer.com/u/Hazimbhat?review_context_id=38772347&review_type=project&sb=t" target="_blank">
+                <i class="fa-solid fa-expand"></i>
+              <span>view review</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="one-project flex flex-col gap-6 shadow-sm p-2">
+          <div class="one-project-top flex items-center justify-between">
+            <div class="one-project-top-left flex items-center gap-3">
+              <div class="one-project-top-left-img rounded-full overflow-hidden w-10 h-10">
+                <img src="./src/assets/h.jpg" width="50" alt="">
+              </div>
+              <div class="one-project-top-left-info flex flex-col justify-center text-xs poppins-medium">
+                <h4 class="text-lg">An Employee Portal</h4>
+                <p>done using html,css,js</p>
+              </div>
+            </div>
+            <div class="one-project-top-right text-2xl">
+              <i class="fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+            </div>
+          </div>
+          <div class="project-images">
+            <div class="carousel-track" id="carouselTrack">
+              <img class="carousel-image" src="./src/assets/project2/Screenshot 2024-12-23 231631.png" alt="Project image 1" />
+              <img class="carousel-image" src="./src/assets/project2/Screenshot 2024-12-23 231735.png" alt="Project image 2" />
+              <img class="carousel-image" src="./src/assets/project2/Screenshot 2024-12-23 231758.png" alt="Project image 3" />
+            </div>
+            <div class="carousel-dots" id="carouselDots"></div>
+          </div>
+          <div class="bottom-info poppins-medium flex items-center justify-between">
+            <div class="bottom-info-left text-lg flex items-center gap-5">
+              <div class="like cursor-pointer flex items-center gap-2 ">
+                <i class="fa-regular fa-heart cursor-pointer"></i>
+                <p class="hidden sm:flex"><span>3</span>Likes</p>
+              </div>
+              <div class="comment flex items-center gap-2">
+                <i class="fa-solid fa-comment cursor-pointer"></i>
+                <p class="hidden sm:flex"><span> 1 </span> Comment</p>
+              </div>
+            </div>
+            <div class="bottom-info-right text-lg flex items-center gap-2">
+              <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+              <p class="hidden sm:flex">Share Project</p>
+            </div>
+          </div>
+          <div class="project-review-from-client flex items-center gap-4 justify-between">
+            <div class="project-review-from-client-left flex items-center">
+              <div class="image rounded-full flex items-center  overflow-hidden ">
+                <img src="./src/assets/project2/client.webp" class="rounded-full" width="70" alt="">
+              </div>
+              <div class="review-info poppins-medium flex flex-col gap-1">
+                <h5 class="flex items-center gap-1"><span class="font-semibold">Dalia H</span> <span><img src="./src/assets/utils/verified.png" width="20" alt=""></span></h5>
+                <p class="review-text   text-sm ">“Outstanding performance, characterized by speed and efficiency in delivering the project with good quality. Punctual and attentive to details. Thank you for your efforts
+</p>
+                <p class="text-xs font-semibold animated-gradient-text-1">4 months ago</p>
+              </div>
+            </div>
+            <div class="project-review-from-client-right poppins-medium cursor-pointer  ">
+              <a href="https://www.freelancer.com/u/Hazimbhat?review_context_id=38914165&review_type=project&sb=t" target="_blank">
+                <i class="fa-solid fa-expand"></i>
+              <span>view review</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="chat-side" class="hidden left-side h-screen sticky  top-0 w-1/4 lg:flex items-center justify-center">
+      <div class="chat-box poppins-medium flex items-center justify-center flex-col gap-6">
+        <a href="/chat.html" class="bg-black text-lg rounded-md text-white py-4 px-8 "><span><i class="fa-brands fa-rocketchat"></i></span> <span>Chat to Know</span></a>
+        <p class=" text-center text-sm font-semibold">
+          you can chat as a Guest to hide your identity
+        </p>
+        
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./src/js/script.js"></script>
+</html>

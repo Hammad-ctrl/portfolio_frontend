@@ -9,7 +9,7 @@ sendButton.addEventListener('click', async (e) => {
 
   const userBubble = `
   <div class="flex items-center gap-3 mb-3 my-4 rounded-md w-full justify-end">
-    <div class="bg-blue-100 p-3 text-black rounded-xl max-w-[70%] break-words text-right">
+    <div class="bg-blue-100 p-3 text-black rounded-xl break-words text-right">
       ${userMessage}
     </div>
     <img src="/src/assets/utils/user.png" width="40" class="rounded-full self-start" alt="User">
@@ -18,7 +18,6 @@ sendButton.addEventListener('click', async (e) => {
 
   input.value = '';
 
-  // Append bot loading placeholder (LEFT-aligned)
   const botId = `bot-msg-${Date.now()}`;
   const botBubble = `
   <div class="flex items-start gap-3 my-4 py-5 w-full justify-start" id="${botId}">
@@ -31,7 +30,6 @@ sendButton.addEventListener('click', async (e) => {
 
   chatContainer.scrollTop = chatContainer.scrollHeight;
 
-  // Make real request to your backend API
   try {
     const res = await fetch('https://portfolio-backend-5w4o.onrender.com/api/chat-req', {
       method: 'POST',
@@ -46,7 +44,7 @@ sendButton.addEventListener('click', async (e) => {
     if (botDiv) {
       botDiv.innerHTML = `
         <img src="/src/assets/utils/robot.png" width="40" class="rounded-full self-start" alt="Bot">
-        <div class="bg-green-100 text-black px-4 py-3 rounded-xl max-w-[70%] break-words text-left">
+        <div class="bg-green-100 text-black px-4 py-3 rounded-xl  break-words text-left">
           ${data.resp || "No response from AI"}
         </div>
       `;

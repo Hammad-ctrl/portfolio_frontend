@@ -20,9 +20,9 @@ sendButton.addEventListener('click', async (e) => {
 
   const botId = `bot-msg-${Date.now()}`;
   const botBubble = `
-  <div class="flex items-start gap-3 my-4 py-5 w-full justify-start" id="${botId}">
-    <img src="/src/assets/utils/robot.png" width="40" class="rounded-full p-2 self-start" alt="Bot">
-    <div class="bg-gray-200 text-black px-4 py-3 rounded-xl max-w-[70%] flex items-center gap-1 animate-pulse">
+  <div class="flex items-start gap-3 mb-12 py-5 w-full justify-start" id="${botId}">
+    <img src="/src/assets/utils/robot.png" width="40" class="rounded-full  self-start" alt="Bot">
+    <div class=" text-black px-4 rounded-xl max-w-[70%] flex items-center gap-1 animate-pulse">
       <span>.</span><span>.</span><span>.</span>
     </div>
   </div>`;

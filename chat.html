@@ -40,14 +40,28 @@
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
             </div>
-            <div class="chat-container w-full py-5" >
+            <div class="chat-container w-full " >
 
             </div>
-            <div class="send-message absolute md:bottom-3 bottom-24 w-[95%]  md:w-2/3 pr-3 md:pr-0">
-            <div class="intput-container w-full relative">
-              <input type="text" name="message" id="message" class="w-full py-4 px-3 border-2 outline-none rounded-md overflow-hidden"  placeholder="Enter the message to send">
-              <button type="submit" class="bg-black text-white absolute top-0 right-0 h-full w-16 sm:w-24 md:w-32 flex items-center gap-3 justify-center rounded-r-md"><span class="hidden sm:flex">Send </span><span><i class="fa-solid fa-paper-plane"></i></span></button>
-            </div>
+            <div class="send-message absolute md:bottom-3 bottom-20 w-[95%]  md:w-2/3 pr-3 md:pr-0">
+              <div class="input-container flex w-full mt-4">
+                <textarea
+                  id="message"
+                  rows="1"
+                  class="flex-1 resize-none w-full py-3 px-2 pr-4 border-2 rounded-l-md outline-none "
+                  placeholder="enter a message..."
+                ></textarea>
+              
+                <button
+                  type="submit"
+                  class="bg-black text-white px-5 flex items-center gap-2 justify-center rounded-r-md hover:bg-gray-800 transition"
+                >
+                  <span class="hidden sm:inline">Send</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </div>
+              
+              
             </div>
           </div>
     </main>

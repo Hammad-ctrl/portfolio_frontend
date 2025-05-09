@@ -11,14 +11,14 @@
 <body>
     <main class="flex w-full h-full">
         <header class="navigation-bar  bottom-0 z-10  fixed w-full flex md:w-[33%] lg:w-1/4 md:sticky md:top-0 bg-white shadow-md md:h-screen justify-between p-3 md:p-10 flex-col">
-            <h1 class="playwrite text-2xl hidden md:block animated-gradient-text font-bold">Hazim Bhat</h1>
+            <a href="/"><h1 class="playwrite text-2xl hidden md:block animated-gradient-text font-bold">Hazim Bhat</h1></a>
             <nav class="navs relative">
               <ul class="navbar flex items-center justify-center md:flex-col md:gap-5 poppins-medium">
-                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex  md:text-sm text-xs">General Info</span><span><i class="fa-solid fa-house-chimney text-2xl md:text-xl"></i></span></a>
-                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex  md:text-sm text-xs">Projects Info</span><span><i class="fa-solid fa-code text-2xl md:text-xl"></i></span></a>
-                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex md:text-sm text-xs">notfications</span><span><i class="fa-regular fa-heart text-2xl md:text-xl"></i></span></a>
-                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden text-xs sm:flex  md:text-sm">Skills Info</span><span><i class="fa-brands fa-readme text-2xl md:text-xl"></i></span></a>
-                <a href="" class="flex items-center gap-2 md:gap-10 hover:text-white hover:bg-black  text-lg md:border-2 w-full justify-center py-2 rounded-md cursor-pointer md:bg-black md:text-white ease-in duration-200 md:hover:bg-gray-800 flex-col-reverse md:flex-row"><span class="md:text-sm text-xs hidden sm:flex  ">Contact Info</span><span><i class="fa-solid fa-phone-volume text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center md:py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex  md:text-sm text-xs">General Info</span><span><i class="fa-solid fa-house-chimney text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center md:py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex  md:text-sm text-xs">Projects Info</span><span><i class="fa-solid fa-code text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center md:py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden sm:flex md:text-sm text-xs">notfications</span><span><i class="fa-regular fa-heart text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 text-lg md:border-2 w-full justify-center md:py-2 rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="hidden text-xs sm:flex  md:text-sm">Skills Info</span><span><i class="fa-brands fa-readme text-2xl md:text-xl"></i></span></a>
+                <a href="" class="flex items-center gap-2 md:gap-10 hover:text-white hover:bg-black  text-lg md:border-2 w-full justify-center md:py-2 rounded-md cursor-pointer md:bg-black md:text-white ease-in duration-200 md:hover:bg-gray-800 flex-col-reverse md:flex-row"><span class="md:text-sm text-xs hidden sm:flex  ">Contact Info</span><span><i class="fa-solid fa-phone-volume text-2xl md:text-xl"></i></span></a>
               </ul>
             </nav>
             <div class="profile hidden poppins-medium md:flex items-center cursor-pointer justify-center text-xl gap-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-3 px-6 rounded-lg shadow-lg transition-all duration-300 hover:from-pink-500 hover:to-yellow-500 hover:scale-105">
@@ -31,30 +31,31 @@
             </div>
           </header>
           <div class="chat-content-main w-full p-4 poppins-medium">
-            <div class="chat-bot-top-info w-full flex items-center justify-between bg-gray-300 rounded-md px-8 py-2">
+            <div class="chat-bot-top-info w-[90%] flex items-center justify-between bg-gray-300 rounded-md px-8 py-2">
                 <div class="name-n-image-chatbot flex items-center gap-4 ">
-                    <img src="/src/assets/utils/robot.png" width="50" alt="">
+                    <img src="/src/assets/utils/robot.png" class="border-2 border-white rounded-full self-center" width="50" alt="">
                     <h2>Chat.ai</h2>
                 </div>
                 <div class="three-dots mx-3">
                     <i class="fa-solid fa-ellipsis-vertical"></i>
                 </div>
             </div>
-            <div class="chat-container w-full " >
-
+            <div class="chat-container w-full" >
+             
+                <div style="background: url(./src/assets/utils/leaf.png); background-repeat: no-repeat; background-position: center;" class="opacity-45  fixed w-full  mx-auto  top-0 left-0 mt-0 mr-auto md:mr-0  h-[33rem]"></div>
             </div>
-            <div class="send-message absolute md:bottom-3 bottom-20 w-[95%]  md:w-2/3 pr-3 md:pr-0">
+            <div class="send-message absolute md:bottom-3 mb-5 sm:mb-1 bottom-20 w-[95%]  md:w-[70%] pr-3 md:pr-0">
               <div class="input-container flex w-full mt-4">
                 <textarea
                   id="message"
                   rows="1"
-                  class="flex-1 resize-none w-full py-3 px-2 pr-4 border-2 rounded-l-md outline-none "
+                  class="flex-1 resize-none w-full py-3 px-2 pr-4 border-2 rounded-l-lg outline-none "
                   placeholder="enter a message..."
                 ></textarea>
               
                 <button
                   type="submit"
-                  class="bg-black text-white px-5 flex items-center gap-2 justify-center rounded-r-md hover:bg-gray-800 transition"
+                  class="bg-black text-white px-5 flex items-center gap-2 justify-center rounded-r-lg hover:bg-gray-800 transition"
                 >
                   <span class="hidden sm:inline">Send</span>
                   <i class="fa-solid fa-paper-plane"></i>

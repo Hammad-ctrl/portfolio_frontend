@@ -64,3 +64,5 @@ if(isChat){
   chatSide.style.width="100%";
 }
 })
+
+

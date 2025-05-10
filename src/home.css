@@ -5,6 +5,11 @@
 ::-webkit-scrollbar{
   width: 2px;
 }
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
@@ -143,4 +148,6 @@
     z-index: 100;
     box-shadow: 0 0 10px 4px yellow;
   }
-  
+  *, *::before, *::after {
+  box-sizing: border-box;
+}

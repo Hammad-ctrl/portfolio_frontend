@@ -9,7 +9,7 @@ sendButton.addEventListener('click', async (e) => {
 
   const userBubble = `
   <div class="flex items-center gap-3 mb-3 my-4 rounded-md w-full justify-end">
-    <div class="bg-blue-300 p-3 text-black rounded-xl break-words text-right">
+    <div class="bg-blue-950 p-3 text-white z-50 rounded-xl break-words text-right">
       ${userMessage}
     </div>
     <img src="/src/assets/utils/user.png" width="40" class="rounded-full self-start" alt="User">
@@ -44,7 +44,7 @@ sendButton.addEventListener('click', async (e) => {
     if (botDiv) {
       botDiv.innerHTML = `
         <img src="/src/assets/utils/robot.png" width="40" class="rounded-full self-start" alt="Bot">
-        <div class="bg-green-300 text-black px-4 py-3 rounded-xl  break-words text-left">
+        <div class="bg-green-950 z-50 text-white px-4 py-3 rounded-xl  break-words text-left">
           ${data.resp || "No response from AI"}
         </div>
       `;
@@ -54,7 +54,7 @@ sendButton.addEventListener('click', async (e) => {
     if (botDiv) {
       botDiv.innerHTML = `
         <img src="/src/assets/utils/robot.png" width="40" class="rounded-full self-start" alt="Bot">
-        <div class="bg-red-100 text-black px-4 py-3 rounded-xl max-w-[70%] break-words text-left">
+        <div class="bg-red-400 z-50 text-white px-4 py-3 rounded-xl max-w-[70%] break-words text-left">
           Error: ${error.message}
         </div>
       `;

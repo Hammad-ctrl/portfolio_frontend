@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./src/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Skills</title>
+</head>
+<body>
+      <main class="flex w-full  h-full">
+        <header class="navigation-bar  bottom-0 z-10  fixed w-full p-2 flex md:w-[33%] lg:w-1/4 md:sticky md:top-0 bg-white shadow-md md:h-screen justify-between  md:p-10 flex-col">
+      <h1 class="playwrite text-2xl hidden md:block animated-gradient-text font-bold">Hazim Bhat</h1>
+      <nav class="navs relative">
+        <button id="chat-btn" class="absolute bg-black flex lg:hidden items-center justify-center text-white rounded-full w-12 h-12 z-50 right-2 md:bottom-[-4rem] md:right-0 bottom-24">
+          <span><i class="fa-brands fa-rocketchat text-xl block"></i></span>
+        </button>
+        <ul class="navbar flex items-center justify-center md:flex-col md:gap-5 poppins-medium">
+          <a href="/" class="flex items-center sm:py-2 sm:gap-2 md:gap-10 text-lg md:border-2 w-full justify-center  rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="text-sm">Home</span><span><i class="fa-solid fa-house-chimney text-2xl md:text-xl"></i></span></a>
+          <a href="/projects.html" class="flex sm:py-2 items-center sm:gap-2 md:gap-10 text-lg md:border-2 w-full justify-center  rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="text-sm">Projects</span><span><i class="fa-solid fa-code text-2xl md:text-xl"></i></span></a>
+          <li class="flex items-center sm:gap-2 sm:py-2 md:gap-10 text-lg md:border-2 w-full justify-center  rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="text-sm">Blink</span><span><i class="fa-regular fa-heart text-2xl md:text-xl"></i></span></li>
+          <a href="skills.html" class="flex items-center sm:gap-2 sm:py-2 md:gap-10 text-lg md:border-2 w-full justify-center  rounded-md cursor-pointer hover:bg-black hover:text-white ease-in duration-200 flex-col-reverse md:flex-row"><span class="text-sm">Skills</span><span><i class="fa-brands fa-readme text-2xl md:text-xl"></i></span></a>
+          <li class="flex items-center sm:gap-2 sm:py-2 md:gap-10 hover:text-white hover:bg-black  text-lg md:border-2 w-full justify-center  rounded-md cursor-pointer md:bg-black md:text-white ease-in duration-200 md:hover:bg-gray-800 flex-col-reverse md:flex-row"><span class="text-sm">Contact</span><span><i class="fa-solid fa-phone-volume text-2xl md:text-xl"></i></span></li>
+        </ul>
+      </nav>
+      <div class="profile hidden poppins-medium md:flex items-center cursor-pointer justify-center text-xl gap-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-3 px-6 rounded-lg shadow-lg transition-all duration-300 hover:from-pink-500 hover:to-yellow-500 hover:scale-105">
+        <div class="profile-photo border-2 border-white p-2 rounded-full w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm">
+          <i class="fa-regular fa-user text-white text-lg"></i>
+        </div>
+        <div class="profile-name">
+          <p class="text-white font-semibold">Bhat Hazim</p>
+        </div>
+      </div>
+    </header>
+     <div class="skills-container poppins-medium w-full">
+        <div class="skills-header p-4 flex items-center justify-between w-full">
+            <div class="name">
+                <h2 class="flex items-center gap-2 font-semibold">Hazim Bhat <span><i class="fa-solid fa-angle-down"></i></span></h2>
+            </div>
+            <div class="ham">
+                <i class="fa-solid fa-bars cursor-pointer"></i>
+            </div>
+        </div>
+        <div class="skills-profile-header p-4 flex items-center justify-between gap-4 sm:gap-12">
+            <div class="profile-skills-image">
+                <img src="./src/assets/utils/profile.jpeg" class="rounded-full w-20 h-20 sm:w-32 sm:h-32 object-cover" alt="">
+            </div>
+            <div class="profile-skills-info flex items-center  gap-3 py-3 sm:gap-10">
+                <div class="skills-top-info flex flex-col items-center  text-xl">
+                    <p class="text-gray-600">10</p>
+                    <p class="text-xs sm:text-lg text-center">Skills</p>
+                </div>
+                 <div class="skills-top-info flex flex-col items-center  text-xl">
+                    <p class="text-gray-600">10</p>
+                    <p class="text-xs sm:text-lg text-center">Completed Projects</p>
+                </div>
+                <div class="skills-top-info flex flex-col items-center text-xl">
+                    <p class="text-gray-600">3</p>
+                    <p class="text-xs sm:text-lg text-center">Ongoing Projects</p>
+                </div>
+            </div>
+        </div>
+        <div class="name-skills-etc p-4 flex flex-col gap-4">
+            <div class="name-profile-skills flex items-center gap-3">
+                <h3 class="font-semibold">Hazim Bhat <span class="text-gray-600">he/him</span></h3>
+                <img src="./src/assets/utils/verified.png" width="24" alt="">
+            </div>
+            <div class="about-skills-profile">
+                <p class="text-gray-700">Full-stack developer passionate about creating user-friendly applications and solving complex problems through clean, efficient code.</p>
+            </div>
+        </div>
+        <div class="profile-skills-contact flex items-center gap-4 px-4">
+            <button class=" rounded-lg w-full py-3 flex items-center justify-center gap-3 bg-gray-200">Contact <span><i class="fa-solid fa-message text-lg"></i></span></button>
+            <a href="" class="text-2xl bg-gray-200 p-2 rounded-md"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="see-all-button p-4 flex items-center justify-between">
+          <p>Front-end Tech</p>
+          <p class="flex items-center gap-2 text-blue-500">see all <span><i class="fa-solid fa-arrow-right"></i></span></p>
+        </div>
+   <div class="skills-section-container  flex gap-10 sm:justify-center  overflow-x-auto sm:overflow-hidden w-auto  mb-14 flex-nowrap sm:flex-wrap">
+  
+  <div class="one-skill-container shrink-0 w-72 flex flex-col items-center border-2 bg-gray-100 rounded-md p-4 shadow-md">
+    <img src="./src/assets/utils/html.jpg" class="rounded-full w-40 h-40 object-cover mb-4" alt="HTML 5 Logo" />
+    <div class="skill-name text-center">
+      <h5 class="text-xl font-semibold">HTML 5</h5>
+      <p class="text-sm text-gray-600">Completed in 2022</p>
+    </div>
+    <div class="w-full mt-4">
+      <div class="flex justify-between items-center mb-1">
+        <span class="text-sm font-medium text-gray-700">Progress</span>
+        <span class="text-sm font-medium text-green-600">95%</span>
+      </div>
+      <div class="w-full bg-gray-300 rounded-full h-4 overflow-hidden">
+        <div class="bg-gradient-to-r from-green-400 via-green-500 to-green-600 h-full rounded-full animate-[pulse_2s_infinite] transition-all duration-700" style="width: 95%;"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="one-skill-container shrink-0 w-72 flex flex-col items-center border-2 bg-gray-100 rounded-md p-4 shadow-md">
+    <img src="./src/assets/utils/css.png" class="rounded-full w-40 h-40 object-cover mb-4" alt="CSS Logo" />
+    <div class="skill-name text-center">
+      <h5 class="text-xl font-semibold">CSS</h5>
+      <p class="text-sm text-gray-600">Started in 2022</p>
+    </div>
+    <div class="w-full mt-4">
+      <div class="flex justify-between items-center mb-1">
+        <span class="text-sm font-medium text-gray-700">Progress</span>
+        <span class="text-sm font-medium text-green-600">85%</span>
+      </div>
+      <div class="w-full bg-gray-300 rounded-full h-4 overflow-hidden">
+        <div class="bg-gradient-to-r from-green-400 via-green-500 to-green-600 h-full rounded-full animate-[pulse_2s_infinite] transition-all duration-700" style="width: 85%;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="one-skill-container shrink-0 w-72 flex flex-col items-center border-2 bg-gray-100 rounded-md p-4 shadow-md">
+    <img src="./src/assets/utils/js.jpg" class="rounded-full w-40 h-40 object-cover mb-4" alt="CSS Logo" />
+    <div class="skill-name text-center">
+      <h5 class="text-xl font-semibold">JavaScript</h5>
+      <p class="text-sm text-gray-600">Started in 2022</p>
+    </div>
+    <div class="w-full mt-4">
+      <div class="flex justify-between items-center mb-1">
+        <span class="text-sm font-medium text-gray-700">Progress</span>
+        <span class="text-sm font-medium text-green-600">90%</span>
+      </div>
+      <div class="w-full bg-gray-300 rounded-full h-4 overflow-hidden">
+        <div class="bg-gradient-to-r from-green-400 via-green-500 to-green-600 h-full rounded-full animate-[pulse_2s_infinite] transition-all duration-700" style="width: 90%;"></div>
+      </div>
+    </div>
+  </div>
+   <div class="one-skill-container shrink-0 w-72 flex flex-col items-center border-2 bg-gray-100 rounded-md p-4 shadow-md">
+    <img src="./src/assets/utils/react.jpg" class="rounded-full w-40 h-40 object-cover mb-4 " alt="CSS Logo" />
+    <div class="skill-name text-center">
+      <h5 class="text-xl font-semibold">React Js</h5>
+      <p class="text-sm text-gray-600">Started in 2023</p>
+    </div>
+    <div class="w-full mt-4">
+      <div class="flex justify-between items-center mb-1">
+        <span class="text-sm font-medium text-gray-700">Progress</span>
+        <span class="text-sm font-medium text-green-600">90%</span>
+      </div>
+      <div class="w-full bg-gray-300 rounded-full h-4 overflow-hidden">
+        <div class="bg-gradient-to-r from-green-400 via-green-500 to-green-600 h-full rounded-full animate-[pulse_2s_infinite] transition-all duration-700" style="width: 90%;"></div>
+      </div>
+    </div>
+  </div>
+   <div class="one-skill-container shrink-0 w-72 flex flex-col items-center border-2 bg-gray-100 rounded-md p-4 shadow-md">
+    <img src="./src/assets/utils/nextjs.png" class="rounded-full w-40 h-40 object-cover mb-4 " alt="CSS Logo" />
+    <div class="skill-name text-center">
+      <h5 class="text-xl font-semibold">Next Js</h5>
+      <p class="text-sm text-gray-600">Started in 2024</p>
+    </div>
+    <div class="w-full mt-4">
+      <div class="flex justify-between items-center mb-1">
+        <span class="text-sm font-medium text-gray-700">Progress</span>
+        <span class="text-sm font-medium text-green-600">80%</span>
+      </div>
+      <div class="w-full bg-gray-300 rounded-full h-4 overflow-hidden">
+        <div class="bg-gradient-to-r from-green-400 via-green-500 to-green-600 h-full rounded-full animate-[pulse_2s_infinite] transition-all duration-700" style="width: 80%;"></div>
+      </div>
+    </div>
+  </div>
+</div> 
+
+    </div>
+    </main>
+</body>
+</html>
